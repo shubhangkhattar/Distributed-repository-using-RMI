@@ -1,0 +1,36 @@
+ADD a 15
+OK
+ADD a 17
+OK
+ADD b 19
+OK
+GET a
+Values are as follows:
+15 17 
+GET b
+Values are as follows:
+19 
+SET a 20
+OK
+GET a
+Values are as follows:
+20 
+ADD r2.a 111
+OK
+DELETE b
+OK
+GET b
+Key value is empty or does not exist at all
+ADD r2.b 22
+OK
+GET r2.b
+Values are as follows:
+22 
+DELETE r2.b
+OK
+GET r2.b
+Key value is empty or does not exist at all
+DSUM a INCLUDING r1 r2
+DSUM is going to be 131
+DSUM a INCLUDING r1 r2 r3
+Server with name:r3 does not exist
